@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Robert Otieno</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Robert Otieno</h1>
+      <nav class="page-nav">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="about.html" class="nav-btn">About</a>
+        <a href="projects.html" class="nav-btn active">Projects</a>
+        <a href="contact.html" class="nav-btn">Contact</a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <h2 class="hero-title">Projects</h2>
+      <p class="hero-description">Below are some of the projects I've worked on — from full-stack systems to tailored dashboards — each crafted with purpose, precision, and impact.</p>
+    </div>
+  </section>
+
+  <section class="projects-grid">
+    <div class="container">
+
+      <div class="project-card">
+        <h3>RCMS - Real Construction Management System</h3>
+        <p>
+          RCMS is a comprehensive platform built to simplify the construction ecosystem. Users can create projects, assign roles, upload progress images, approve milestones, and integrate banking for payments. The system handles land selection using geolocation, real-time photo uploads, and detailed project tracking. I led the frontend architecture using React.js and implemented dynamic dashboards for each role — Users, Project Managers, Construction Companies, and Banks.
+        </p>
+        <div class="project-learnings">
+          <p>
+            This project deepened my understanding of multi-role systems, React routing, and modular architecture. It also taught me the importance of mobile responsiveness, clean UI, and real-time feedback in complex platforms.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>NaviPOS - Smart Point of Sale System</h3>
+        <p>
+          NaviPOS is a modern, lightweight POS solution for small and medium businesses. It features real-time inventory management, customer tracking, sales analytics, and receipt printing. Built with React and Node.js, it offers offline-first functionality and a clean, intuitive interface that's easy for cashiers and managers to operate.
+        </p>
+        <div class="project-learnings">
+          <p>
+            I focused on optimizing performance, securing transactions, and integrating local data storage using IndexedDB. The goal was to offer something functional and beautiful — and the result was a sleek POS used by actual clients for daily business.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Church Management System</h3>
+        <p>
+          This system was built to help churches manage member registration, sermon schedules, announcements, event planning, and financial records. The dashboard includes modules for admin, pastors, and department heads, enabling role-specific control over content and tasks.
+        </p>
+        <div class="project-learnings">
+          <p>
+            Designed with a spiritual yet modern aesthetic, the system allowed me to explore clean UI/UX principles while managing sensitive data structures and real-time updates in faith-based organizations.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>School System (Student Results & Administration)</h3>
+        <p>
+          This system enables administrators to manage student enrollment, exam results, grading, term reports, and performance analysis. It includes secure logins for students, parents, and staff, with customized dashboards for each role. Data is stored securely with role-based access controls.
+        </p>
+        <div class="project-learnings">
+          <p>
+            I implemented detailed reporting tools and PDF exports for results, and the experience taught me the real-world implications of data security, student privacy, and automated report generation.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Robert Otieno. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const nav = document.querySelector('.page-nav');
+      const btn = document.querySelector('.mobile-menu-btn');
+      nav.classList.toggle('active');
+      btn.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

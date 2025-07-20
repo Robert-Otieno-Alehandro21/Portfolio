@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Robert Otieno</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Robert Otieno</h1>
+      <nav class="page-nav">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="about.html" class="nav-btn active">About</a>
+        <a href="projects.html" class="nav-btn">Projects</a>
+        <a href="contact.html" class="nav-btn">Contact</a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <h2 class="hero-title">About Me</h2>
+      <p class="hero-description">
+        I'm Robert Otieno, a software engineering student at the University of Eastern Africa, Baraton. I'm passionate about building systems that solve real-world problems, especially in sectors that need innovation like construction, education, and ministry. I value clean, functional design and well-structured backend logic.
+      </p>
+      <p class="hero-description">
+        I consider myself disciplined, highly curious, and always open to learning from both peers and professionals. I've dedicated time to strengthening my coding, improving my UI/UX skills, and exploring how technologies can bring people and processes together. I believe in impact-driven development, and I always strive to build with purpose.
+      </p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="content-card">
+        <h3>My Journey at Xiracom Limited</h3>
+        <p>
+          My journey at Xiracom Limited was a defining period in my development as a software engineer. It wasn't just an internship — it was a full immersion into the pace and professionalism of a working tech team.
+        </p>
+        <p>
+          I joined Xiracom during my university attachment period and was assigned to work on the RCMS (Real Construction Management System), a platform that streamlines operations between users, project managers, construction companies, and banks. This project gave me practical exposure to collaborative coding and real-world deployment standards.
+        </p>
+        <p>
+          At Xiracom, I worked on developing role-based dashboards. Each user — whether a client, project manager, or contractor — had their own experience, and I was responsible for building those interfaces using React.js and modern CSS. I learned the importance of usability and clear design when working with real stakeholders.
+        </p>
+        <p>
+          I implemented modules that allowed users to upload construction photos, view project timelines, manage teams, and make approvals. I also assisted in integrating payment verification features and location selection using longitude and latitude.
+        </p>
+        <p>
+          One of the most important lessons I learned was how to work with clean code architecture and reusable components, ensuring that the codebase was scalable and maintainable. I got hands-on experience working with version control systems and testing APIs.
+        </p>
+        <p>
+          I improved my ability to work under tight timelines and learned how to communicate clearly with supervisors and team members. There were moments of debugging long into the night — and in those, I discovered the true grind and reward of being a developer.
+        </p>
+        <p>
+          Beyond technical skills, Xiracom taught me professionalism, time management, and how to carry myself with confidence in a software environment. I walked out of the experience more mature, more capable, and ready to take on even bigger systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section alt">
+    <div class="container">
+      <div class="content-card">
+        <h3>Technical Skills</h3>
+        <p>
+          My core skills include HTML, CSS, JavaScript, and React for frontend development. I've built multiple responsive interfaces and understand how to build clean, scalable component structures.
+        </p>
+        <p>
+          On the backend, I'm proficient with Node.js, Express, and MongoDB. I've worked with Supabase for authentication and file storage, and I've integrated third-party services like Cloudinary for image management.
+        </p>
+        <p>
+          I use GitHub for version control, Postman for API testing, and deployment platforms like Render, Netlify, and Vercel. I'm comfortable working with RESTful APIs and enjoy building systems that are both secure and performant.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Robert Otieno. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const nav = document.querySelector('.page-nav');
+      const btn = document.querySelector('.mobile-menu-btn');
+      nav.classList.toggle('active');
+      btn.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robert Otieno | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Robert Otieno</h1>
+      <nav class="page-nav">
+        <button class="nav-btn active" onclick="location.href='index.html'">Home</button>
+        <button class="nav-btn" onclick="location.href='about.html'">About</button>
+        <button class="nav-btn" onclick="location.href='projects.html'">Projects</button>
+        <button class="nav-btn" onclick="location.href='contact.html'">Contact</button>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <h2 class="hero-title">Hello, I'm Robert Otieno</h2>
+      <p class="hero-description">A passionate Software Engineer specializing in modern web and system development, currently shaping solutions at Xiracom Limited.</p>
+      <a href="projects.html" class="btn-primary">View My Projects</a>
+    </div>
+  </section>
+
+  <section class="about-preview">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-description">I'm a developer who thrives on transforming ideas into digital solutions. I believe in writing clean, maintainable code, and collaborating with great teams to build efficient systems that solve real problems. My journey into software engineering has been filled with continuous learning, and I'm always eager to tackle new challenges.</p>
+      <a href="about.html" class="btn-secondary">More About Me</a>
+    </div>
+  </section>
+
+  <section class="project-preview">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <h3>NaviPOS</h3>
+          <p>A modern Point of Sale system designed for seamless inventory, sales, and reporting in real time.</p>
+        </div>
+        <div class="card">
+          <h3>RCMS</h3>
+          <p>Robust Construction Management System with role-based dashboards and milestone tracking features.</p>
+        </div>
+        <div class="card">
+          <h3>Clergy Dashboard</h3>
+          <p>A church management solution that streamlines clergy roles, sermons, members, and church events.</p>
+        </div>
+        <div class="card">
+          <h3>School System</h3>
+          <p>A school management platform handling results, attendance, timetable generation, and fee tracking.</p>
+        </div>
+      </div>
+      <a href="projects.html" class="btn-secondary">Explore All Projects</a>
+    </div>
+  </section>
+
+  <section class="contact-preview">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-description">If you'd like to collaborate or discuss a new opportunity, feel free to reach out. I'm open to freelance work, internships, and full-time roles.</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <strong>Email:</strong> <a href="mailto:robotieno3@gmail.com">robotieno3@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <strong>Phone:</strong> +254769169819 / +254727947968
+        </div>
+        <div class="contact-item">
+          <strong>Location:</strong> Eldoret, Kenya
+        </div>
+      </div>
+      <a href="contact.html" class="btn-primary">Contact Me</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Robert Otieno. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const nav = document.querySelector('.page-nav');
+      const btn = document.querySelector('.mobile-menu-btn');
+      nav.classList.toggle('active');
+      btn.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
